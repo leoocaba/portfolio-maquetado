@@ -1,0 +1,57 @@
+/* Inicio de style HEADER */
+
+header {
+    background-color: #f8f9fa!important;
+    height: 10vh;
+}
+
+header nav ul li{ 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+  }
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+header nav .navbar-brand {
+    letter-spacing: 0.20em;
+    text-decoration: line-through;
+}
+
+header nav ul li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+header nav ul li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+/* Fin de style HEADER */
+
+/* Inicio de style INICIO */
+
+.__inicio {
+  height: 90vh;
+}
+
+.__inicio article h1 {
+  font-size: 60px;
+}
+
+/* Fin de style INICIO */
