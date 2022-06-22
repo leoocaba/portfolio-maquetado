@@ -1,13 +1,24 @@
 /* Inicio de style HEADER */
-
-header {
-    background-color: #f8f9fa!important;
-    height: 10vh;
+body {
+  position: relative;
 }
 
-header nav ul li{ 
-    display: table-cell; 
-    position: relative; 
+header {
+  background-color: #f8f9fa!important;
+  position: sticky!important;
+  top: 0;
+  width: 100%;
+}
+
+header .nav{
+    background-color: #f8f9fa!important;
+    min-height: 10vh;
+    width: 100%;
+}
+
+header nav ul li{
+    display: table-cell;
+    position: relative;
     padding: 15px 0;
   }
 header nav ul li a {
@@ -24,7 +35,7 @@ header nav .navbar-brand {
     text-decoration: line-through;
 }
 
-header nav ul li a:after {    
+header nav ul li a:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -37,9 +48,9 @@ header nav ul li a:after {
     width: 0;
   }
 
-header nav ul li a:hover:after { 
-    width: 100%; 
-    left: 0; 
+header nav ul li a:hover:after {
+    width: 100%;
+    left: 0;
   }
 
 /* Fin de style HEADER */
@@ -51,7 +62,30 @@ header nav ul li a:hover:after {
 }
 
 .__inicio article h1 {
-  font-size: 60px;
+  font-size: 4rem;
+  line-height: 1.2;
+  text-align: left;
 }
 
+.__inicio article h4 {
+  font-size: 1rem;
+  line-height: 1;
+  text-align: left;
+}
 /* Fin de style INICIO */
+
+/* Inicio de style FOOTER */
+
+.__footer {
+  width: 100%;
+  -webkit-box-shadow: 0px -6px 6px -3px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 0px -6px 6px -3px rgba(0, 0, 0, 0.42);
+  box-shadow: 0px -6px 6px -3px rgba(0, 0, 0, 0.42);
+}
+
+.__footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Inicio de style FOOTER */
