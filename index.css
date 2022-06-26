@@ -4,11 +4,19 @@
   --color-terciario: #B0D9CD;
   --color-header: #f8f9fa;
   --fuente: "Poppins",sans-serif;
+  --fuente-secundaria: Montserrat,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   --interletrado: 0.2rem;
   --transicion: all 0.3s linear;
   --redondeado: 3.125rem;
 }
 
+p {
+  font-family: var(--fuente-secundaria);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  opacity: 1;
+}
 
 body::-webkit-scrollbar {
   width: 12px;
@@ -69,7 +77,7 @@ header nav ul li{
     padding: 15px 0;
   }
 header nav ul li a {
-    color: var(--color-secundario);
+    color: #2D3748!important;
     text-decoration: none;
     letter-spacing: .20em!important;
     font-weight: 600!important;
@@ -132,6 +140,11 @@ header nav ul li a:hover:after {
   font-weight: bolder;
 }
 
+.__inicio article h4 .__fullstack {
+  background-color: var(--color-terciario);
+  border-radius: .5rem;
+}
+
 .__inicio article .__btn-inicio .btn {
   text-transform: uppercase;
   background: var(--color-principal);
@@ -151,6 +164,10 @@ header nav ul li a:hover:after {
 .__inicio article .__btn-inicio .btn:hover {
   color: var(--color-principal);
   background-color: #fff;
+}
+
+.__inicio .__img img {
+  border-radius: 1rem;
 }
 
 /* Fin de style INICIO */
@@ -201,6 +218,8 @@ header nav ul li a:hover:after {
 /* Inicio de style FOOTER */
 
 .__footer {
+  background-color: #000;
+  color: #fff;
   width: 100%;
   -webkit-box-shadow: 0px -6px 6px -3px rgba(0, 0, 0, 0.42);
   -moz-box-shadow: 0px -6px 6px -3px rgba(0, 0, 0, 0.42);
