@@ -7,13 +7,26 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/index.css">
-
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>@leoocaba Portfolio</title>
 </head>
 <body class="justify-content-center">
+
+    <section class="__socalo-superior p-0 m-0">
+      <div class="container">
+        <div class="row p-0 m-0">
+          <div class="col-12 d-flex p-0">
+            <div class="col __logo m-0 p-auto">
+              <img class="p-auto m-auto" src="/APLogo.png" width="115" height="70" alt="Logo Argentina Programa">
+            </div>
+            <div class="__yo-programo d-flex justify-content-end align-items-center mx-1 mx-sm-0 mx-md-0 mx-lg-1 px-0 px-sm-0 px-md-0 px-lg-1">
+              <h6 class="text-end p-auto m-auto">Argentina Programa - <span>#YoProgramo</span></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
     <header class="">
 
@@ -25,8 +38,8 @@
               </button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav my-2 my-sm-2 my-md-2 my-lg-0 d-flex flex-column flex-sm-column flex-md-row flex-lg-row justify-content-md-around">
-                  <li class="nav-item my-2 my-sm-2 my-md-2 my-lg-0 py-0">
-                    <a class="nav-link text-center active" href="#" aria-current="Página inicio">Inicio</a>
+                  <li class="nav-item active my-2 my-sm-2 my-md-2 my-lg-0 py-0">
+                    <a class="nav-link text-center" href="#" aria-current="Página inicio">Inicio</a>
                   </li>
                   <li class="nav-item my-2 my-sm-2 my-md-2 my-lg-0 py-0">
                     <a class="nav-link text-center" href="#" aria-current="Página acerca de mí">Acerca</a>
@@ -41,7 +54,7 @@
                     <a class="nav-link text-center" href="#" aria-current="Página de contacto">Contacto</a>
                   </li>
                   <li class="nav-item my-2 my-sm-2 my-md-2 my-lg-0 py-0">
-                    <a class="nav-link text-center text-primary" href="#" aria-current="Iniciar sesión">Login</a>
+                    <a class="nav-link text-center text-success" href="#" aria-current="Iniciar sesión">Login</a>
                   </li>
                 </ul>
               </div>
@@ -50,35 +63,43 @@
 
     </header>
 
-    <section class="__inicio bg-white container col-12 d-flex flex-column flex-sm-column flex-md-column flex-lg-column align-items-center justify-content-center m-auto">
-
-      <div class="row p-0 m-0">
-        <article class="container col-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center mx-auto">
-          <h1 class="fw-bolder text-center text-sm-center text-md-start text-lg-start">¡Hola! Soy <span>Leonel Caballero</span></h1>
-          <h4 class="text-uppercase text-center text-sm-center text-md-start text-lg-start">Desarrollador frontend</h4>
-        </article>
-        <article class="container col-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center justify-content-sm-center justify-content-md-end justify-content-lg-end mx-auto">
-          <img class="img-fluid my-4 my-sm-4 my-md-0 my-lg-0" width="400" height="400" src="/img/image-default.png" alt="Foto de perfil">
-        </article>
-      </div>
-      
+    <section class="__inicio bg-white container col-12 d-flex flex-column flex-sm-column flex-md-column flex-lg-column align-items-center justify-content-center">
+        <div class="row">
+          <article class="container col-12 col-sm-12 col-md-6 col-lg-7 d-flex flex-column justify-content-center px-1 mx-auto my-auto mb-4 mb-sm-4 mb-md-auto mb-lg-auto ">
+            <h1 class="fw-bolder text-center text-sm-center text-md-start text-lg-start">¡Hola! Soy</h1>
+            <h2 class="__nombre d-flex d-inline fw-bolder text-center text-sm-center text-md-start text-lg-start">Leonel Caballero</h2>
+            <h4 class="text-uppercase text-center text-sm-center text-md-start text-lg-start">Desarrollador frontend</h4>
+              <div class="__btn-inicio d-flex flex-column flex-sm-column flex-md-column flex-lg-row justify-content-start mt-4">
+              <button type="button" href="/contacto" class="btn btn-md text-center text-uppercase my-2 my-sm-2 my-md-2 my-lg-3 mx-3 mx-sm-3 mx-md-0 mx-lg-0 px-auto px-sm-auto px-md-0 px-lg-4">Contáctame</button>
+              <button type="button" href="/acerca" class="btn btn-md text-center text-uppercase my-2 my-sm-2 my-md-2 my-lg-3 mx-3 mx-sm-3 mx-md-0 mx-lg-3 px-auto px-sm-auto px-md-0 px-lg-4">Acerca de mí</button>
+              </div>
+          </article>
+          <article class="__img container col-12 col-sm-12 col-md-6 col-lg-5 d-flex justify-content-center justify-content-sm-center justify-content-md-end justify-content-lg-end align-items-center mt-4 mt-sm-auto my-md-auto my-lg-auto">
+            <img class="img-fluid d-flex my-auto" src="/img/image-default.png" alt="Foto de perfil">
+          </article>
+        </div>
     </section>
 
-    <section class="__acerca col-12 bg-light d-flex flex-column justify-content-center p-0">
-      <h2 class="mx-auto my-4">Acerca de mí</h2>
+    <section class="__acerca col-12 d-flex flex-column justify-content-center px-0 py-4">
+      <article class="__titulo-seccion col-12  d-flex flex-column justify-content-center">
+        <h2 class="mx-auto mt-4 mb-2 py-1">Acerca de mí</h2>
+        <span class="__subraya d-flex mx-auto"></span>
+      </article>
       <div class="row p-0 m-0">
-        <article class="col-10 col-sm-10 col-md-8 col-lg-8 d-flex flex-column justify-content-start align-items-start mx-auto">
+        <article class="col-10 col-sm-10 col-md-8 col-lg-8 d-flex flex-column justify-content-start align-items-start mx-auto px-0 py-4">
           <p class="fw-bolder px-4">¡Bienvenido/a a mi portfolio!</p>
           <p class="text-left px-4 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi qui numquam illum amet dicta, sapiente obcaecati, rerum quis possimus exercitationem laborum facere similique quasi distinctio cumque dignissimos nihil praesentium eligendi! Reprehenderit cum deleniti ea ipsum qui consequatur, neque fuga necessitatibus ratione laborum dolores. Sapiente odio vero aspernatur ad consequatur maiores.</p>
           <p class="text-left px-4 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto similique ab facilis quaerat. Quasi pariatur fugiat maxime tenetur sed adipisci laudantium voluptate quibusdam aliquam necessitatibus.</p>
+          <div class="container-fluid d-flex">
+            <button type="button" href="/contacto" class="btn btn-md text-center text-uppercase d-flex mx-auto my-1">Ver Proyectos</button>
+          </div>
         </article>
       </div>
-
     </section>
 
 
 
-    <footer class="container-fluid mt-4">
+    <footer class="container-fluid">
       <div class="row">
         <div class="__footer col-12 bg-dark text-light d-flex flex-column justify-content-center align-items-center px-3">
           <div class="col-12 col-sm-12 col-md-12 col-lg-1 d-flex d-block flex-row justify-content-center mt-4 mb-1 mx-2">
