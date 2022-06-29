@@ -3,6 +3,7 @@
   --color-secundario: #6B8790;
   --color-terciario: #B0D9CD;
   --color-header: #f8f9fa;
+  --background-gris: #fafafa;
   --fuente: "Poppins",sans-serif;
   --fuente-secundaria: Montserrat,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   --interletrado: 0.2rem;
@@ -10,16 +11,8 @@
   --redondeado: 3.125rem;
 }
 
-p {
-  font-family: var(--fuente-secundaria);
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: 1.75rem;
-  opacity: 1;
-}
-
 body::-webkit-scrollbar {
-  width: 12px;
+  width: 14px;
 }
 
 body::-webkit-scrollbar-track {
@@ -27,7 +20,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #000;
+  background-color: var(--color-principal);
   border-radius: 20px;
   border: 3px solid #fff;
 }
@@ -50,13 +43,43 @@ body::-webkit-scrollbar-thumb {
 }
 /* Fin Sócalo superior */
 
+/* Párrafos */
+
+p {
+  font-family: var(--fuente-secundaria);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  opacity: 1;
+}
+
+/* fin párrafos */
+
+/* Inicio Título de sección y subraya */
+
+.__titulo-seccion h2 {
+  font-family: var(--fuente);
+  font-weight: 700;
+  letter-spacing: var(--interletrado);
+  line-height: 1.25;
+}
+
+.__titulo-seccion .__subraya {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--color-principal);
+}
+
+/* Fin Título de sección y subraya */
+
 /* Inicio de style HEADER */
 body {
   position: relative;
 }
 
 header {
-  background-color: var(--color-header);
+  background-color: var(--background-gris);
   position: sticky!important;
   top: 0;
   width: 100%;
@@ -66,7 +89,7 @@ header {
 }
 
 header .nav{
-    background-color: var(--color-header);
+    background-color: var(--background-gris);
     min-height: 10vh;
     width: 100%;
 }
@@ -176,21 +199,7 @@ header nav ul li a:hover:after {
 /* Inicio de style Acerca de */
 
 .__acerca {
-  background-color: #F1F5F8;
-}
-
-.__acerca .__titulo-seccion h2 {
-  font-family: var(--fuente);
-  font-weight: 700;
-  letter-spacing: var(--interletrado);
-  line-height: 1.25;
-}
-
-.__acerca .__titulo-seccion .__subraya {
-  width: 5rem;
-  height: 0.25rem;
-  margin-bottom: 1.25rem;
-  background: var(--color-principal);
+  background-color: var(--color-header)
 }
 
 .__acerca .btn {
@@ -215,6 +224,35 @@ header nav ul li a:hover:after {
 }
 
 /* Fin de style Acerca de */
+
+/* Inicio de style Experiencias */
+
+.__experiencias .__img-experiencia, .__experiencias .__img-experiencia img {
+  border-radius: 15px;
+}
+
+.__experiencia-datos .__datos {
+  background: inherit;
+    border-radius: 10px;
+    border: 10px solid rgba(255,255,255,.15);
+    box-shadow: 1px 1px 4px rgba(0,0,0,.3);
+  }
+  .__experiencias .__experiencia-datos .__datos:before {
+    content: '';
+    background: inherit;
+    filter: blur(5px);
+    -webkit-filter: blur(6px);
+    -moz-filter: blur(6px);
+    -o-filter: blur(6px);
+    -ms-filter: blur(6px);
+  }
+
+  .__experiencias .__experiencia-datos .__datos h6 {
+    color: var(--color-principal);
+  }
+
+  /* Inicio de style Experiencias */
+
 
 /* Inicio de style FOOTER */
 
