@@ -1,11 +1,14 @@
 :root {
-  --color-principal: #1DAA69;
-  --color-secundario: #6B8790;
-  --color-terciario: #B0D9CD;
+  --color-principal: #1daa69;
+  --color-secundario: #6b8790;
+  --color-terciario: #b0d9cd;
   --color-header: #f8f9fa;
   --background-gris: #fafafa;
-  --fuente: "Poppins",sans-serif;
-  --fuente-secundaria: Montserrat,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  --fuente: "Poppins", sans-serif;
+  --fuente-secundaria: Montserrat, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
   --interletrado: 0.2rem;
   --transicion: all 0.3s linear;
   --redondeado: 3.125rem;
@@ -16,19 +19,39 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #fff;
+  background: #424242;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--color-principal);
+  background-color: #686868;
   border-radius: 20px;
-  border: 3px solid #fff;
+  border: 3px solid #424242;
 }
 
 * {
   scrollbar-width: thin !important;
   scrollbar-color: #000 #fff !important;
 }
+
+/* Inicio style BOX */
+.__style-box {
+  background: inherit;
+  border-radius: 10px;
+  border: 10px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.__style-box::before {
+  content: "";
+  background: inherit;
+  filter: blur(5px);
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+}
+
+/* Fin style BOX */
 
 /* Inicio Sócalo superior */
 .__socalo-superior {
@@ -38,7 +61,7 @@ body::-webkit-scrollbar-thumb {
 
 .__socalo-superior .__yo-programo h6 {
   color: #fff;
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-weight: 700;
 }
 /* Fin Sócalo superior */
@@ -80,7 +103,7 @@ body {
 
 header {
   background-color: var(--background-gris);
-  position: sticky!important;
+  position: sticky !important;
   top: 0;
   width: 100%;
   -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.42);
@@ -88,10 +111,10 @@ header {
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.42);
 }
 
-header .nav{
-    background-color: var(--background-gris);
-    min-height: 10vh;
-    width: 100%;
+header .nav {
+  background-color: var(--background-gris);
+  min-height: 10vh;
+  width: 100%;
 }
 
 header nav .container-fluid .__logo {
@@ -100,53 +123,54 @@ header nav .container-fluid .__logo {
 }
 
 header nav ul li {
-    display: table-cell;
-    position: relative;
-    padding: 15px 0;
-  }
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
 header nav ul li a {
-    color: #2D3748!important;
-    text-decoration: none;
-    letter-spacing: .20em!important;
-    font-weight: 600!important;
-    display: inline-block;
-    padding: 15px 20px;
-    position: relative;
-  }
+  color: #2d3748 !important;
+  text-decoration: none;
+  letter-spacing: 0.2em !important;
+  font-weight: 600 !important;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
 
-  header nav ul li a:active, header nav ul li .active {
-    color: var(--color-principal)!important;
-  }
-
+header nav ul li a:active,
+header nav ul li .active {
+  color: var(--color-principal) !important;
+}
 
 header nav ul li a:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: var(--color-principal);
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--color-principal);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
 
 header nav ul li a:hover:after {
-    width: 100%;
-    left: 0;
-  }
+  width: 100%;
+  left: 0;
+}
 
 /* Fin de style HEADER */
 
 /* Inicio de style INICIO */
 
 .__inicio {
- margin-top: 3.125rem;
- margin-bottom: 3.125rem;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
 }
 
-.__inicio article h1, .__inicio article .__nombre{
+.__inicio article h1,
+.__inicio article .__nombre {
   font-size: 4rem;
   line-height: 1.2;
   text-align: left;
@@ -160,13 +184,13 @@ header nav ul li a:hover:after {
   color: var(--color-secundario);
   font-size: 1rem;
   line-height: 1;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-weight: bolder;
 }
 
 .__inicio article h4 .__fullstack {
   background-color: var(--color-terciario);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .__inicio article .__btn-inicio .btn {
@@ -174,11 +198,11 @@ header nav ul li a:hover:after {
   background: var(--color-principal);
   color: #fff;
   padding: 0.5rem 1.5rem;
-  letter-spacing: 0.2rem!important;
+  letter-spacing: 0.2rem !important;
   display: inline-block;
   font-weight: 700;
   transition: var(--transicion);
-  font-size: .875rem;
+  font-size: 0.875rem;
   border: 3px solid var(--color-principal);
   cursor: pointer;
   box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
@@ -199,7 +223,7 @@ header nav ul li a:hover:after {
 /* Inicio de style Acerca de */
 
 .__acerca {
-  background-color: var(--color-header)
+  background-color: var(--color-header);
 }
 
 .__acerca .btn {
@@ -207,11 +231,11 @@ header nav ul li a:hover:after {
   background: var(--color-principal);
   color: #fff;
   padding: 0.5rem 1.5rem;
-  letter-spacing: 0.2rem!important;
+  letter-spacing: 0.2rem !important;
   display: inline-block;
   font-weight: 700;
   transition: var(--transicion);
-  font-size: .875rem;
+  font-size: 0.875rem;
   border: 3px solid var(--color-principal);
   cursor: pointer;
   box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
@@ -227,32 +251,16 @@ header nav ul li a:hover:after {
 
 /* Inicio de style Experiencias */
 
-.__experiencias .__img-experiencia, .__experiencias .__img-experiencia img {
+.__experiencias .__img-experiencia,
+.__experiencias .__img-experiencia img {
   border-radius: 15px;
 }
 
-.__experiencia-datos .__datos {
-  background: inherit;
-    border-radius: 10px;
-    border: 10px solid rgba(255,255,255,.15);
-    box-shadow: 1px 1px 4px rgba(0,0,0,.3);
-  }
-  .__experiencias .__experiencia-datos .__datos:before {
-    content: '';
-    background: inherit;
-    filter: blur(5px);
-    -webkit-filter: blur(6px);
-    -moz-filter: blur(6px);
-    -o-filter: blur(6px);
-    -ms-filter: blur(6px);
-  }
+.__experiencias .__experiencia-datos .__datos h6 {
+  color: var(--color-principal);
+}
 
-  .__experiencias .__experiencia-datos .__datos h6 {
-    color: var(--color-principal);
-  }
-
-  /* Fin de style Experiencias */
-
+/* Fin de style Experiencias */
 
 /* Inicio de style FOOTER */
 
