@@ -12,7 +12,7 @@
 }
 
 body::-webkit-scrollbar {
-  width: 14px;
+  width: 13px;
 }
 
 body::-webkit-scrollbar-track {
@@ -251,7 +251,7 @@ header nav ul li a:hover:after {
     color: var(--color-principal);
   }
 
-  /* Inicio de style Experiencias */
+  /* Fin de style Experiencias */
 
 
 /* Inicio de style FOOTER */
@@ -274,4 +274,4 @@ header nav ul li a:hover:after {
   color: var(--color-terciario);
 }
 
-/* Inicio de style FOOTER */
+/* Fin de style FOOTER */
