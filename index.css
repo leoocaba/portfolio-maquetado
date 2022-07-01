@@ -260,6 +260,14 @@ header nav ul li a:hover:after {
   color: var(--color-principal);
 }
 
+.__experiencias .__style-box .__numero-experiencia .__numero {
+  background-color: rgba(29, 170, 105, .8);
+  border: 3px solid var(--color-principal);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
 /* Fin de style Experiencias */
 
 /* Inicio de style FOOTER */
