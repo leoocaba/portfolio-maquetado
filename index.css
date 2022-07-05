@@ -249,18 +249,18 @@ header nav ul li a:hover:after {
 
 /* Fin de style Acerca de */
 
-/* Inicio de style Experiencias */
+/* Inicio de style Experiencias y Educación */
 
 .__experiencias .__img-experiencia,
 .__experiencias .__img-experiencia img {
   border-radius: 15px;
 }
 
-.__experiencias .__experiencia-datos .__datos h6 {
+.__experiencias .__experiencia-datos .__datos h6, .__educacion .__educacion-datos .__datos h6 {
   color: var(--color-principal);
 }
 
-.__experiencias .__style-box .__numero-experiencia .__numero {
+.__experiencias .__style-box .__numero-experiencia .__numero, .__educacion .__style-box .__numero-educacion .__numero {
   background-color: rgba(29, 170, 105, .8);
   border: 3px solid var(--color-principal);
   border-radius: 50%;
@@ -269,6 +269,21 @@ header nav ul li a:hover:after {
 }
 
 /* Fin de style Experiencias */
+
+/* Inicio style Educación */
+
+.__educacion {
+  background-color: var(--color-header);
+}
+
+.__educacion .__img-educacion img {
+  max-height: 15.625rem;
+  max-width: 15.625rem;
+  border-radius: 50%;
+  border: 0.188rem solid var(--color-terciario);
+}
+
+/* Fin style Educación */
 
 /* Inicio de style FOOTER */
 
