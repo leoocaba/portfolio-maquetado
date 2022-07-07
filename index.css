@@ -2,7 +2,7 @@
   --color-principal: #1daa69;
   --color-secundario: #6b8790;
   --color-terciario: #b0d9cd;
-  --color-header: #f8f9fa;
+  --color-bg: #f8f9fa;
   --background-gris: #fafafa;
   --fuente: "Poppins", sans-serif;
   --fuente-secundaria: Montserrat, ui-sans-serif, system-ui, -apple-system,
@@ -50,7 +50,6 @@ body::-webkit-scrollbar-thumb {
   -o-filter: blur(6px);
   -ms-filter: blur(6px);
 }
-
 /* Fin style BOX */
 
 /* Inicio Sócalo superior */
@@ -223,7 +222,7 @@ header nav ul li a:hover:after {
 /* Inicio de style Acerca de */
 
 .__acerca {
-  background-color: var(--color-header);
+  background-color: var(--color-bg);
 }
 
 .__acerca .btn {
@@ -273,7 +272,7 @@ header nav ul li a:hover:after {
 /* Inicio style Educación */
 
 .__educacion {
-  background-color: var(--color-header);
+  background-color: var(--color-bg);
 }
 
 .__educacion .__img-educacion img {
@@ -284,6 +283,63 @@ header nav ul li a:hover:after {
 }
 
 /* Fin style Educación */
+
+/* Inicio de style login */
+
+.__login-box .__user-box {
+  position: relative;
+}
+
+.__login-box .__user-box input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #000;
+  border: none;
+  border-bottom: 3px solid var(--color-secundario);
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 8px 44px -4px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 13px -7px #000000, 0px 8px 44px -4px rgba(0,0,0,0);
+  outline: none;
+}
+.__login-box .__user-box label {
+  position: absolute;
+  top:0;
+  left: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--color-secundario);
+  pointer-events: none;
+  transition: .5s;
+}
+
+.__login-box .__user-box input:focus ~ label,
+.__login-box .__user-box input:valid ~ label {
+  top: -20px;
+  left: 5px;
+  color: var(--color-principal);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.__login-box form .__check-box {
+  border: none;
+  border-bottom: 3px solid var(--color-secundario);
+  border-radius: 15px;
+  padding: 10px 15px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 8px 44px -4px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 13px -7px #000000, 0px 8px 44px -4px rgba(0,0,0,0);
+}
+
+.__login-box form .__check-box label {
+  margin-left: 4px;
+} 
+.__login-box form .__check-box input {
+  margin-top: 4px;
+  margin-left: 2px;
+}
+
+/* Fin style login */
 
 /* Inicio de style FOOTER */
 
