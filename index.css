@@ -103,6 +103,7 @@ body {
 header {
   background-color: var(--background-gris);
   position: sticky !important;
+  z-index: 100;
   top: 0;
   width: 100%;
   -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.42);
