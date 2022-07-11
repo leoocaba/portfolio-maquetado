@@ -285,6 +285,27 @@ header nav ul li a:hover:after {
 
 /* Fin style Educación */
 
+/* Inicio de style Proyectos */
+
+.__proyectos .__img-proyecto,
+.__proyectos .__img-proyecto img {
+  border-radius: 15px;
+}
+
+.__proyectos .__proyecto-datos .__datos h6 {
+  color: var(--color-principal);
+}
+
+.__proyectos .__style-box .__numero-proyecto .__numero {
+  background-color: rgba(29, 170, 105, .8);
+  border: 3px solid var(--color-principal);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+/* Fin de style Proyectos */
+
 /* Inicio de style login */
 
 .__login-box .__user-box {
